@@ -1,0 +1,30 @@
+{
+  "name": "Open Last Download",
+  "version": "1.0.0",
+  "description": "Opens the last downloaded file",
+  
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["utils.js", "main-last-download.js"]
+  },
+
+  "commands": {
+    "open-last-download": {
+      "suggested_key": { "default": "Alt+Shift+Q" },
+      "description": "Open Last Download"
+    }
+  },
+  
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "16": "icons/last-download-16.png"
+    },
+    "default_title": "Open Last Download"
+  },
+  
+  "permissions": [
+    "downloads",
+    "downloads.open"
+  ]
+}
